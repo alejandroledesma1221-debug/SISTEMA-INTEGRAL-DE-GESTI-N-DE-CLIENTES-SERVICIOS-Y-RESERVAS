@@ -1,0 +1,78 @@
+[2026-11-21 20:03:39] [INFO] Sistema Software FJ inicializado correctamente.
+[2026-11-21 20:03:39] [INFO] Cliente registrado: Cliente [CLI-01] Laura Gómez | Doc: 1020456789 | Email: laura.gomez@empresa.com
+[2026-11-21 20:03:39] [INFO] Cliente registrado: Cliente [CLI-02] Carlos Mendoza | Doc: 79854123 | Email: cmendoza@techcol.co
+[2026-11-21 20:03:39] [ERROR] (Op 2 - Validación de cliente) DatoInvalidoError: [ERR_DATO_INVALIDO] Nombre de cliente inválido: 'Ana 123'.
+[2026-11-21 20:03:39] [ERROR] (Registro de cliente) DatoInvalidoError: [ERR_DATO_INVALIDO] Ya existe un cliente registrado con ID 'CLI-04' o documento '1020456789'.
+[2026-11-21 20:03:39] [INFO] Servicio registrado: [Sala] Sala Innovación (ID: SRV-01) | Capacidad: 12 pers. | Modalidad: con videoconferencia | Tarifa/h: $80,000.00 | Estado: Disponible
+[2026-11-21 20:03:39] [INFO] Servicio registrado: [Equipo] Estación Workstation RTX (Cómputo Alto Rendimiento) | Stock: 2 | Tarifa/h: $45,000.00 | Depósito: $50,000.00
+[2026-11-21 20:03:39] [INFO] Servicio registrado: [Asesoría] Arquitectura Cloud | Área: Nube y Microservicios | Consultor: Arquitecto | Tarifa base/h: $120,000.00
+[2026-11-21 20:03:39] [ERROR] (Op 5a - Tarifa negativa) DatoInvalidoError: [ERR_DATO_INVALIDO] La tarifa por hora debe ser mayor que cero.
+[2026-11-21 20:03:39] [ERROR] (Op 5b - Nivel consultor inválido) DatoInvalidoError: [ERR_DATO_INVALIDO] Nivel de consultor 'MasterSupreme' inválido. Opciones: ['Junior', 'Senior', 'Arquitecto'].
+[2026-11-21 20:03:39] [INFO] Reserva creada en estado PENDIENTE: Reserva [RES-01] Estado: PENDIENTE | Cliente: Laura Gómez | Servicio: Sala Innovación | Duración: 4h | Total: $418,880.00
+[2026-11-21 20:03:39] [INFO] Reserva RES-01 CONFIRMADA para Laura Gómez | Servicio: Sala Innovación | Total: $376,992.00
+[2026-11-21 20:03:39] [INFO] Reserva RES-01 PROCESADA exitosamente.
+[2026-11-21 20:03:39] [INFO] Auditoría de ejecución finalizada para reserva RES-01 (Estado: PROCESADA).
+[2026-11-21 20:03:39] [ERROR] (Creación de reserva RES-02) DatoInvalidoError: [ERR_DATO_INVALIDO] Los asistentes (25) superan la capacidad máxima de la sala (12).
+[2026-11-21 20:03:39] [INFO] Reserva creada en estado PENDIENTE: Reserva [RES-03] Estado: PENDIENTE | Cliente: Carlos Mendoza | Servicio: Estación Workstation RTX | Duración: 5h | Total: $327,250.00
+[2026-11-21 20:03:39] [INFO] Reserva RES-03 CONFIRMADA para Carlos Mendoza | Servicio: Estación Workstation RTX | Total: $327,250.00
+[2026-11-21 20:03:39] [ERROR] (Creación de reserva RES-04) ServicioNoDisponibleError: [ERR_SERVICIO_NO_DISPONIBLE] Stock insuficiente para 'Estación Workstation RTX'. Disponible: 0, solicitado: 1.
+[2026-11-21 20:03:39] [INFO] Reserva RES-03 CANCELADA. Motivo: Cambio de cronograma del proyecto
+[2026-11-21 20:03:39] [ERROR] (Procesamiento de reserva RES-03) OperacionNoPermitidaError: [ERR_OPERACION_NO_PERMITIDA] Solo se pueden procesar reservas CONFIRMADAS. Estado actual: 'CANCELADA'.
+[2026-11-21 20:03:39] [INFO] Auditoría de ejecución finalizada para reserva RES-03 (Estado: CANCELADA).
+[2026-11-21 20:03:39] [ERROR] (Creación de reserva RES-05) DatoInvalidoError: [ERR_DATO_INVALIDO] Las sesiones de asesoría deben durar entre 1 y 8 horas por jornada.
+[2026-11-21 20:03:39] [INFO] Reserva creada en estado PENDIENTE: Reserva [RES-06] Estado: PENDIENTE | Cliente: Laura Gómez | Servicio: Arquitectura Cloud | Duración: 3h | Total: $749,700.00
+[2026-11-21 20:03:39] [INFO] Reserva RES-06 CONFIRMADA para Laura Gómez | Servicio: Arquitectura Cloud | Total: $749,700.00
+[2026-11-21 20:03:39] [INFO] Reserva RES-06 PROCESADA exitosamente.
+[2026-11-21 20:03:39] [INFO] Auditoría de ejecución finalizada para reserva RES-06 (Estado: PROCESADA).
+[2026-11-21 15:06:07] [INFO] Sistema Software FJ inicializado correctamente.
+[2026-11-21 15:06:07] [INFO] Cliente registrado: Cliente [CLI-01] Laura Gómez | Doc: 1020456789 | Email: laura.gomez@empresa.com
+[2026-11-21 15:06:07] [INFO] Cliente registrado: Cliente [CLI-02] Carlos Mendoza | Doc: 79854123 | Email: cmendoza@techcol.co
+[2026-11-21 15:06:07] [ERROR] (Op 2 - Validación de cliente) DatoInvalidoError: [ERR_DATO_INVALIDO] Nombre de cliente inválido: 'Ana 123'.
+[2026-11-21 15:06:07] [ERROR] (Registro de cliente) DatoInvalidoError: [ERR_DATO_INVALIDO] Ya existe un cliente registrado con ID 'CLI-04' o documento '1020456789'.
+[2026-11-21 15:06:07] [INFO] Servicio registrado: [Sala] Sala Innovación (ID: SRV-01) | Capacidad: 12 pers. | Modalidad: con videoconferencia | Tarifa/h: $80,000.00 | Estado: Disponible
+[2026-11-21 15:06:07] [INFO] Servicio registrado: [Equipo] Estación Workstation RTX (Cómputo Alto Rendimiento) | Stock: 2 | Tarifa/h: $45,000.00 | Depósito: $50,000.00
+[2026-11-21 15:06:07] [INFO] Servicio registrado: [Asesoría] Arquitectura Cloud | Área: Nube y Microservicios | Consultor: Arquitecto | Tarifa base/h: $120,000.00
+[2026-11-21 15:06:07] [ERROR] (Op 5a - Tarifa negativa) DatoInvalidoError: [ERR_DATO_INVALIDO] La tarifa por hora debe ser mayor que cero.
+[2026-11-21 15:06:07] [ERROR] (Op 5b - Nivel consultor inválido) DatoInvalidoError: [ERR_DATO_INVALIDO] Nivel de consultor 'MasterSupreme' inválido. Opciones: ['Junior', 'Senior', 'Arquitecto'].
+[2026-11-21 15:06:07] [INFO] Reserva creada en estado PENDIENTE: Reserva [RES-01] Estado: PENDIENTE | Cliente: Laura Gómez | Servicio: Sala Innovación | Duración: 4h | Total: $418,880.00
+[2026-11-21 15:06:07] [INFO] Reserva RES-01 CONFIRMADA para Laura Gómez | Servicio: Sala Innovación | Total: $376,992.00
+[2026-11-21 15:06:07] [INFO] Reserva RES-01 PROCESADA exitosamente.
+[2026-11-21 15:06:07] [INFO] Auditoría de ejecución finalizada para reserva RES-01 (Estado: PROCESADA).
+[2026-11-21 15:06:07] [ERROR] (Creación de reserva RES-02) DatoInvalidoError: [ERR_DATO_INVALIDO] Los asistentes (25) superan la capacidad máxima de la sala (12).
+[2026-11-21 15:06:07] [INFO] Reserva creada en estado PENDIENTE: Reserva [RES-03] Estado: PENDIENTE | Cliente: Carlos Mendoza | Servicio: Estación Workstation RTX | Duración: 5h | Total: $327,250.00
+[2026-11-21 15:06:07] [INFO] Reserva RES-03 CONFIRMADA para Carlos Mendoza | Servicio: Estación Workstation RTX | Total: $327,250.00
+[2026-11-21 15:06:07] [ERROR] (Creación de reserva RES-04) ServicioNoDisponibleError: [ERR_SERVICIO_NO_DISPONIBLE] Stock insuficiente para 'Estación Workstation RTX'. Disponible: 0, solicitado: 1.
+[2026-11-21 15:06:07] [INFO] Reserva RES-03 CANCELADA. Motivo: Cambio de cronograma del proyecto
+[2026-11-21 15:06:07] [ERROR] (Procesamiento de reserva RES-03) OperacionNoPermitidaError: [ERR_OPERACION_NO_PERMITIDA] Solo se pueden procesar reservas CONFIRMADAS. Estado actual: 'CANCELADA'.
+[2026-11-21 15:06:07] [INFO] Auditoría de ejecución finalizada para reserva RES-03 (Estado: CANCELADA).
+[2026-11-21 15:06:07] [ERROR] (Creación de reserva RES-05) DatoInvalidoError: [ERR_DATO_INVALIDO] Las sesiones de asesoría deben durar entre 1 y 8 horas por jornada.
+[2026-11-21 15:06:07] [INFO] Reserva creada en estado PENDIENTE: Reserva [RES-06] Estado: PENDIENTE | Cliente: Laura Gómez | Servicio: Arquitectura Cloud | Duración: 3h | Total: $749,700.00
+[2026-11-21 15:06:07] [INFO] Reserva RES-06 CONFIRMADA para Laura Gómez | Servicio: Arquitectura Cloud | Total: $749,700.00
+[2026-11-21 15:06:07] [INFO] Reserva RES-06 PROCESADA exitosamente.
+[2026-11-21 15:06:07] [INFO] Auditoría de ejecución finalizada para reserva RES-06 (Estado: PROCESADA).
+[2026-11-22 14:25:20] [INFO] Sistema Software FJ inicializado correctamente.
+[2026-11-22 14:25:20] [INFO] Cliente registrado: Cliente [CLI-01] Laura Gómez | Doc: 1020456789 | Email: laura.gomez@empresa.com
+[2026-11-22 14:25:20] [INFO] Cliente registrado: Cliente [CLI-02] Carlos Mendoza | Doc: 79854123 | Email: cmendoza@techcol.co
+[2026-11-22 14:25:20] [ERROR] (Op 2 - Validación de cliente) DatoInvalidoError: [ERR_DATO_INVALIDO] Nombre de cliente inválido: 'Ana 123'.
+[2026-11-22 14:25:20] [ERROR] (Registro de cliente) DatoInvalidoError: [ERR_DATO_INVALIDO] Ya existe un cliente registrado con ID 'CLI-04' o documento '1020456789'.
+[2026-11-22 14:25:20] [INFO] Servicio registrado: [Sala] Sala Innovación (ID: SRV-01) | Capacidad: 12 pers. | Modalidad: con videoconferencia | Tarifa/h: $80,000.00 | Estado: Disponible
+[2026-11-22 14:25:20] [INFO] Servicio registrado: [Equipo] Estación Workstation RTX (Cómputo Alto Rendimiento) | Stock: 2 | Tarifa/h: $45,000.00 | Depósito: $50,000.00
+[2026-11-22 14:25:20] [INFO] Servicio registrado: [Asesoría] Arquitectura Cloud | Área: Nube y Microservicios | Consultor: Arquitecto | Tarifa base/h: $120,000.00
+[2026-11-22 14:25:20] [ERROR] (Op 5a - Tarifa negativa) DatoInvalidoError: [ERR_DATO_INVALIDO] La tarifa por hora debe ser mayor que cero.
+[2026-11-22 14:25:20] [ERROR] (Op 5b - Nivel consultor inválido) DatoInvalidoError: [ERR_DATO_INVALIDO] Nivel de consultor 'MasterSupreme' inválido. Opciones: ['Junior', 'Senior', 'Arquitecto'].
+[2026-11-22 14:25:20] [INFO] Reserva creada en estado PENDIENTE: Reserva [RES-01] Estado: PENDIENTE | Cliente: Laura Gómez | Servicio: Sala Innovación | Duración: 4h | Total: $418,880.00
+[2026-11-22 14:25:20] [INFO] Reserva RES-01 CONFIRMADA para Laura Gómez | Servicio: Sala Innovación | Total: $376,992.00
+[2026-11-22 14:25:20] [INFO] Reserva RES-01 PROCESADA exitosamente.
+[2026-11-22 14:25:20] [INFO] Auditoría de ejecución finalizada para reserva RES-01 (Estado: PROCESADA).
+[2026-11-22 14:25:20] [ERROR] (Creación de reserva RES-02) DatoInvalidoError: [ERR_DATO_INVALIDO] Los asistentes (25) superan la capacidad máxima de la sala (12).
+[2026-11-22 14:25:20] [INFO] Reserva creada en estado PENDIENTE: Reserva [RES-03] Estado: PENDIENTE | Cliente: Carlos Mendoza | Servicio: Estación Workstation RTX | Duración: 5h | Total: $327,250.00
+[2026-11-22 14:25:20] [INFO] Reserva RES-03 CONFIRMADA para Carlos Mendoza | Servicio: Estación Workstation RTX | Total: $327,250.00
+[2026-11-22 14:25:20] [ERROR] (Creación de reserva RES-04) ServicioNoDisponibleError: [ERR_SERVICIO_NO_DISPONIBLE] Stock insuficiente para 'Estación Workstation RTX'. Disponible: 0, solicitado: 1.
+[2026-11-22 14:25:20] [INFO] Reserva RES-03 CANCELADA. Motivo: Cambio de cronograma del proyecto
+[2026-11-22 14:25:20] [ERROR] (Procesamiento de reserva RES-03) OperacionNoPermitidaError: [ERR_OPERACION_NO_PERMITIDA] Solo se pueden procesar reservas CONFIRMADAS. Estado actual: 'CANCELADA'.
+[2026-11-22 14:25:20] [INFO] Auditoría de ejecución finalizada para reserva RES-03 (Estado: CANCELADA).
+[2026-11-22 14:25:20] [ERROR] (Creación de reserva RES-05) DatoInvalidoError: [ERR_DATO_INVALIDO] Las sesiones de asesoría deben durar entre 1 y 8 horas por jornada.
+[2026-11-22 14:25:21] [INFO] Reserva creada en estado PENDIENTE: Reserva [RES-06] Estado: PENDIENTE | Cliente: Laura Gómez | Servicio: Arquitectura Cloud | Duración: 3h | Total: $749,700.00
+[2026-11-22 14:25:21] [INFO] Reserva RES-06 CONFIRMADA para Laura Gómez | Servicio: Arquitectura Cloud | Total: $749,700.00
+[2026-11-22 14:25:21] [INFO] Reserva RES-06 PROCESADA exitosamente.
+[2026-11-22 14:25:21] [INFO] Auditoría de ejecución finalizada para reserva RES-06 (Estado: PROCESADA).
